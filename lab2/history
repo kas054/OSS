@@ -1,0 +1,75 @@
+.:
+итого 4
+drw-rwxr-x. 1 anastasia anastasia 16 сен 16 00:44 dir
+---xr-----. 1 root anastasia 5 сен 16 00:42 file
+-rw-------. 1 anastasia anastasia 0 сен 16 01:04 file1
+-rw-rw-rw-. 1 anastasia anastasia 0 сен 16 01:04 file2
+
+./dir:
+ls: невозможно получить доступ к './dir/new_file': Отказано в доступе
+итого 0
+-????????? ? ? ? ? ? new_file
+
+
+
+    1  cd
+    2  mkdir test
+    3  cd test
+    4  touch file
+    5  ls -l
+    6  cmod 000 test
+    7  chmod 000 test
+    8  ls
+    9  cd file
+   10  ls
+   11  chmod 000 file
+   12  vim file
+   13  cat >> file
+   14  chmod 200 file
+   15  ll file
+   16  cat >> file
+   17  cat file
+   18  chmod g+r file
+   19  ll file
+   20  cat file
+   21  chmod u+r file
+   22  ls -l
+   23  cat file
+   24  mkdir dir
+   25  touch dir/new_file
+   26  cd dir
+   27  ls
+   28  cat >> new_file
+   29  cd ..
+   30  ls
+   31  chmod u-x
+   32  chmod u-x dir
+   33  cd dir
+   34  rm dir/test2
+   35  chown root dir
+   36  chown root:root dir
+   37  umask 0077
+   38  touch file1
+   39  ll file1
+   40  umask 0000
+   41  touch file1
+   42  touch file2
+   43  ll file2
+   44  pwd
+   45  cd test
+   46  ls
+   47  sudo chown root file
+   48  ls -l file
+   49  chown u+r g-r o-r file
+   50  chmod u+r g-r o-r file
+   51  sudo chmod u+r g-r o-r file
+   52  sudo chmod 100 file
+   53  cat file
+   54  sudo chmod g+r file
+   55  cat file
+   56  ls - lR
+   57  ls -lR file
+   58  ls -lR 
+   59  cd
+   60  ls
+   61  history > history2.txt
