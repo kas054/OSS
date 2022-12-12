@@ -1,0 +1,242 @@
+    1  whoami
+    2  sudo whoami
+    3  su -username
+    4  su - username
+    5  whoami
+    6  clean
+    7  clear
+    8  whoami
+    9  whoaim
+   10  whoami
+   11  echo "Hello word"
+   12  date
+   13  cal
+   14  man cal
+   15  cal -3
+   16  man cal
+   17  man
+   18  man history
+   19  man
+   20  man man
+   21  history
+   22  pwd
+   23  cd /
+   24  pwd
+   25  cd ..
+   26  pwd
+   27  ls
+   28  ls /var
+   29  cd ~
+   30  cd ..
+   31  pwd
+   32  ls
+   33  ls -l
+   34  man ls
+   35  cd ~
+   36  ls
+   37  pwd
+   38  mkdir fruits
+   39  cd ~
+   40  ls
+   41  pwd
+   42  cd /
+   43  pwd
+   44  cd ~/animals
+   45  mkdir ~/animals
+   46  touch /tmp/temp
+   47  cd fruits
+   48  ls
+   49  cd
+   50  cd fruits
+   51  touch apple banana pineapple lion
+   52  ls
+   53  path animals
+   54  touch ~/animals/cat.txt
+   55  cd /
+   56  cd animals
+   57  ls
+   58  cd ~/animals
+   59  ls
+   60  pwd
+   61  cd ~/fruits
+   62  ls
+   63  rouch ~/animals/dog.txt ~/animals/elephant.txt
+   64  touch ~/animals/dog.txt ~/animals/elephant.txt
+   65  date apple
+   66  ls
+   67  stat apple
+   68  ls b*
+   69  ls a*
+   70  ls [bi]*
+   71  ls b* i*
+   72  cp /etc/passwd
+   73  cp /etc/passwd >
+   74  cp /etc/passwd ~
+   75  cat etc/issue
+   76  cat /etc/issue
+   77  ls
+   78  cp /etc/issue apple
+   79  cat apple
+   80  mv lion ~/animals
+   81  pwd
+   82  cd
+   83  ls animals
+   84  cd ~/fruits
+   85  ls
+   86  rename pineapple pine
+   87  rename s'pineapple' pineapple
+   88  man rename
+   89  rename --help
+   90  rename ~/pineapple pineapple
+   91  mv pineapple pine
+   92  ls
+   93  mv pine pineapple
+   94  ls
+   95  man ws
+   96  wc --help
+   97  wc -l /etc/passwd
+   98* AAABBBBB
+   99  ln -s /etc/passwd passwd_link
+  100  ls
+  101  ln .bash_history history_hard
+  102  ls
+  103  cd ~
+  104  ln /.bash_history history_hard
+  105  ln .bash_history history_hard
+  106  ls -l ~/.bash_history 
+  107  ls -l ~/banana
+  108  ls
+  109  rm fruits/apple
+  110  mkdir rmme
+  111  rmdir rmme
+  112  rmdir fruits
+  113  rmdir -rf fruits
+  114  rmdir --help
+  115  /fr
+  116  rmdir --help
+  117  man rmdir
+  118  rmdir -fr fruits
+  119  rm -fr fruits
+  120  cat /etc/asswd var/log/boot.log
+  121  cat /etc/passwd var/log/boot.log
+  122  cat /etc/passwd /var/log/boot.log
+  123  cp ~ /etc/init.d/ ~
+  124  cp -r /etc/init.d/ ~
+  125  ls
+  126  rm  init.d
+  127  rm  -fr init.d
+  128  cp -r /etc/init.d/ ~
+  129  ls
+  130  rm  -fr init.d
+  131  man cut
+  132  ls /etc/passwd
+  133  ls
+  134  cd /etc/passwd
+  135  cd /etc
+  136  ls
+  137  cat passwd
+  138  cd
+  139  man cut
+  140  cut -d: -f1 /etc/asswd
+  141  cut -d: -f1 /etc/passwd
+  142  cut -d: -f /etc/passwd
+  143  cut -d: -f1 3 /etc/passwd
+  144  cat /etc/passwd
+  145  cut -d: -f1 /etc/passwd | sort
+  146  cut -d: -f1,3,4/etc/passwd | column -ts| less
+  147  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  148  man less
+  149  man column
+  150  cat /etc/passwd
+  151  cut -d: -f1,3 /etc/passwd | column -ts: | less
+  152  grep :/bin/bash /etc/passwd | wc -l
+  153  grep :/bin/bash /etc/passwd 
+  154  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  155  man rpm
+  156  rpm -q
+  157  rpm -qa
+  158  rmp -qa --qf
+  159  rpm -qa --qf '%{NAME}: %{SIZE}\n'
+  160  man rpm
+  161  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -n25
+  162  rpm -ql man-db | xargs -l du    2> /dev/null  | sort -n
+  163  man rpm
+  164  man -d
+  165  man man
+  166  top -b -n1
+  167  top -b -n1 | sort
+  168  top -b -n1 | sort -i
+  169  top -b -n1 | sort -i -k12
+  170  top -b -n1 | sort -i -k11 | less
+  171  top -b -n1 | tail -n+8 | cut -c7-  | tr -s ' ' '\t' | cut -f11,5
+  172* 
+  173  cat -d: /etc/passwd
+  174  cut -d: /etc/passwd
+  175  cut -d: -f1 /etc/passwd
+  176  cut -d: -f1 /etc/passwd | sort
+  177  cut -d:  /etc/passwd | sort -k1 | tr ":" " "
+  178  cut -d: -f  /etc/passwd | sort -k1 | tr ":" " "
+  179  cut -d: -f1,7  /etc/passwd | tr ":" " " | sort -k1
+  180  sort -k1 /etc/passwd | tr ":" " "
+  181  sort -k1 /etc/passwd | tr ":" " " | table
+  182  sort -k1 /etc/passwd | tr ":" " " | column -t
+  183  sort -k1 /etc/passwd | tr ":" " " | column -t | less
+  184  git --version
+  185  cd /usr/share/doc/git-*~
+  186  cd /usr/share/doc/git-*
+  187  cd /usr/share/doc
+  188  ls
+  189  grep git-* 
+  190  history
+  191  ls
+  192  ls | grep git-*
+  193  cd git-*
+  194  cd git
+  195  ls | grep user-manual
+  196  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  197  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  198* 
+  199  cat user-manual.txt 
+  200  cat user-manual.txt | tr -cs '[:alpha:]' '\n' 
+  201  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' 
+  202  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c 
+  203  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  204  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  205  ping ya.ru
+  206  curl wttr.in
+  207  hostname -I
+  208  curl iconfig.me
+  209  curl ifconfig.me
+  210   wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md 
+  211  sudo  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md 
+  212   sudo wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md | less
+  213  whoami
+  214  cd
+  215   less README-ru.md
+  216  cd usr/share/doc/git
+  217  cd usr/share/doc
+  218  cd /usr/share/doc/git
+  219  ls
+  220  ls | grep README
+  221  less README-ru.md
+  222  rm README-ru.md.1
+  223  sudo rm README-ru.md.1
+  224  ls
+  225  cd
+  226  sudo -i
+  227  sudo id
+  228  id
+  229  sudo less /var/log/messages
+  230  cd  /var
+  231  cd log
+  232  ls | grep messages
+  233  su
+  234  cd
+  235  su
+  236  history
+  237  su
+  238  id
+  239  whoami
+  240  cd
+  241  ls
+  242  history > commandline_history.txt
