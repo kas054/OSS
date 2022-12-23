@@ -11,65 +11,61 @@ ls: невозможно получить доступ к './dir/new_file': От
 -????????? ? ? ? ? ? new_file
 
 
-
-    1  cd
+    1  cd ~
     2  mkdir test
     3  cd test
-    4  touch file
-    5  ls -l
-    6  cmod 000 test
-    7  chmod 000 test
-    8  ls
-    9  cd file
-   10  ls
-   11  chmod 000 file
-   12  vim file
-   13  cat >> file
-   14  chmod 200 file
-   15  ll file
-   16  cat >> file
-   17  cat file
-   18  chmod g+r file
-   19  ll file
-   20  cat file
-   21  chmod u+r file
-   22  ls -l
-   23  cat file
-   24  mkdir dir
-   25  touch dir/new_file
-   26  cd dir
-   27  ls
-   28  cat >> new_file
-   29  cd ..
-   30  ls
-   31  chmod u-x
-   32  chmod u-x dir
+    4  man chmod
+    5  man touch
+    6  touch file
+    7  ls -l file
+    8  chmode 000 file
+    9  chmod 000 file
+   10  ls -l file
+   11  echo "Test" > file
+   12  cat file
+   13  chmod 100 file
+   14  ls -l file
+   15  chmod 200 file
+   16  ls -l file
+   17  ll file
+   18  cat file
+   19  chmod 340 file
+   20  ls - file
+   21  ls -l file
+   22  man chmod
+   23  chmod 640 file
+   24  ls -l file
+   25  cat file
+   26  mkdir 
+   27  mkdir dir
+   28  cat>dir/new_file
+   29  ls
+   30  ls dir
+   31  rm dir/new_file 
+   32  cat>dir/new_file
    33  cd dir
-   34  rm dir/test2
-   35  chown root dir
-   36  chown root:root dir
-   37  umask 0077
-   38  touch file1
-   39  ll file1
-   40  umask 0000
-   41  touch file1
-   42  touch file2
-   43  ll file2
-   44  pwd
-   45  cd test
-   46  ls
-   47  sudo chown root file
-   48  ls -l file
-   49  chown u+r g-r o-r file
-   50  chmod u+r g-r o-r file
-   51  sudo chmod u+r g-r o-r file
-   52  sudo chmod 100 file
+   34  ls
+   35  cd ../
+   36  ls
+   37  chmod 666 dir
+   38  ls dir
+   39  rm dir/new_file 
+   40  ll dir
+   41  man chown
+   42  man chgrp
+   43  chown root file
+   44  chgrp root file
+   45  ls
+   46  umast 177
+   47  umask 177
+   48  touch file1
+   49  ll file1
+   50  umask 111
+   51  touch file2
+   52  ll file2
    53  cat file
-   54  sudo chmod g+r file
-   55  cat file
-   56  ls - lR
-   57  ls -lR file
-   58  ls -lR 
-   59  cd
-   60  ls
-   61  history > history2.txt
+   54  ls -lR
+   55  chmode 664 dir
+   56  chmod 664 dir
+   57  ls
+   58  history > history2.txt
